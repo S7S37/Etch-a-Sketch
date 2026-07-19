@@ -1,10 +1,11 @@
 const container = document.querySelector(".container")
-const resetButton = document.querySelector("button")
-const resetResoulution = document.querySelector(".resetResolution")
+const changeButton = document.querySelector(".changeResouluton")
+const resetResoulution = document.querySelector(".resetResoulution")
+
 // make a grid using flexbox
-for (let i = 0;i<100*100;i++){
+for (let i = 0;i<16*16;i++){
     const div = document.createElement("div");
-    let boxSize = 960/100
+    let boxSize = 960/16
     div.style.flexBasis = `${boxSize}px`
     div.style.height = `${boxSize}px`
     div.classList.add("pixel-Box")
@@ -15,7 +16,7 @@ for (let i = 0;i<100*100;i++){
     })
 }
 
-resetButton.addEventListener("click", (e)=> {
+changeButton.addEventListener("click", (e)=> {
     const divs = document.querySelectorAll(".pixel-Box")
     let numOfBoxes = prompt("please enter resolution(value between 1-100)")
     numOfBoxes = Number(numOfBoxes)
@@ -45,3 +46,8 @@ resetButton.addEventListener("click", (e)=> {
     }
 })
 
+resetResoulution.addEventListener("click", ()=>{
+    const divs = document.querySelectorAll(".pixel-Box")
+    divs.forEach( (div) => {div.style.backgroundColor = "white"})    
+    
+})
