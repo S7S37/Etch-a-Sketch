@@ -1,7 +1,39 @@
 *{
     margin: 0;
     padding: 0;
-    
+    background-color: azure;
+    text-align: center;
+}
+/* CSS Styles */
+h1 {
+  max-width: 800px;
+  margin: 40px auto 20px auto;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  animation: fadeInDown 0.5s ease-out;
+}
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #2b990a;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin:20px 50px ;
+    box-shadow: 0 4px 14px 0 rgba(23, 131, 72, 0.3);
+    transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #5dc778;
+  box-shadow: 0 6px 20px rgba(29, 155, 96, 0.4);
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #003ea1;
+  transform: translateY(1px);
 }
 
 
@@ -10,10 +42,12 @@
     flex-wrap: wrap;
     width: 960px;
     height: 960px;
-    
+    margin: 10px auto;
+    border: 5px solid black;
+    background-color: white;
 }
 .pixel-box{
-    
+    background-color: white;
     flex-grow: 1;
     flex-shrink: 0;
 }

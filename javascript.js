@@ -9,6 +9,7 @@ for (let i = 0;i<16*16;i++){
     div.style.flexBasis = `${boxSize}px`
     div.style.height = `${boxSize}px`
     div.classList.add("pixel-Box")
+    div.style.backgroundColor="white"
     container.appendChild(div)
 // setting a hovering effect
     div.addEventListener("mouseenter", (e)=> {
@@ -37,6 +38,7 @@ changeButton.addEventListener("click", (e)=> {
             let boxSize = 960/numOfBoxes
             div.style.flexBasis = `${boxSize}px`
             div.style.height = `${boxSize}px`
+            div.style.backgroundColor="white"
             div.classList.add("pixel-Box")
             container.appendChild(div)
             div.addEventListener("mouseenter", (e)=> {
